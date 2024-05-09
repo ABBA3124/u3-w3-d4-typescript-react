@@ -15,11 +15,11 @@ const HomePage: React.FC = () => {
 
   return (
     <div className='bg-secondary'>
-    <div className='m-5'>
-        <h2 className='text-center mb-5 mt-3'>⬇️Tutti i nostri articoli !⬇️</h2>
+    <div className='mx-5'>
+        <h2 className='text-center mb-5'>⬇️Tutti i nostri articoli !⬇️</h2>
         <Row className='row-gap-3'>
       {articles.map(result => (
-        <ArticleCard key={result.id} Result={result} />
+        <ArticleCard key={result.id} result={result} />
       ))}
       </Row>
     </div>
